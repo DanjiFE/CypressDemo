@@ -2,7 +2,6 @@
 cypress/dowloads
 cypress/screenshots
 cypress/video/.*mp4
-*.log
 *.xml
 *.html
 .vscode
