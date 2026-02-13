@@ -1,9 +1,8 @@
 /node_modules
 cypress/dowloads
 cypress/screenshots
-cypress/video/.*mp4
+cypress/videos
+cypress/reports
 *.xml
 *.html
 .vscode
-
-++
