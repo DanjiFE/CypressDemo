@@ -4,10 +4,10 @@
   "description": "Training framework",
   "scripts": {
     "all_tests": "npx cypress run",
-    "spec_select": "npx cypress run --spec cypress/e2e/CheckboxesDropdowns.spec.js --headed",
-    "browser_report": "npx cypress run --spec cypress/e2e/CheckboxesDropdowns.spec.js --reporter mochawesome --browser chrome",
-    "chrome": "npx cypress run --spec cypress/e2e/CheckboxesDropdowns.spec.js --browser chrome",
-    "cloud_report": "npx cypress run --browser chrome --spec cypress/e2e/CheckboxesDropdowns.spec.js --headed --record --key 57393598-b1f1-4783-964d-031d05f38a23",
+    "spec_select": "npx cypress run --spec cypress/e2e/test/checkbox-dprdwn.cy.js --headed --reporter mochawesome --browser chrome",
+    "browser_report": "npx cypress run --spec cypress/e2e/test/checkbox-dprdwn.cy.js --reporter mochawesome --browser chrome",
+    "chrome": "npx cypress run --spec cypress/e2e/test/checkbox-dprdwn.cy.js --browser chrome",
+    "cloud_report": "npx cypress run --spec cypress/e2e/checkbox-drpdwn.cy.js --browser chrome --headed --record --key 57393598-b1f1-4783-964d-031d05f38a23",
     "test_cases_set_one_tag": "npx cypress run --browser chrome --env grepTags=smoke",
     "test_cases_set_two_tags": "npx cypress run --browser chrome --env grepTags=\"smoke regression\"",
     "test_cases_set_both_tags": "npx cypress run --browser chrome --env grepTags=smoke+regression"

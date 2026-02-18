@@ -1,4 +1,4 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   projectId: "upem8x",
@@ -14,8 +14,7 @@ module.exports = defineConfig({
     openMode: 1
   },
   e2e: {
-    specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
-    experimentalSessionAndOrigin: true,
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },

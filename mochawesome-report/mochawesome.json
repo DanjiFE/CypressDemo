@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-02-18T14:09:04.185Z",
+    "end": "2026-02-18T14:09:55.420Z",
+    "duration": 51235,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca0f8892-a50f-493e-99a6-0a22748fca2e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\checkbox-dprdwn.cy.js",
+      "file": "cypress\\e2e\\test\\checkbox-dprdwn.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9b44a51f-fe45-4249-bade-33c86ffc8fa3",
+          "title": "checkbox test & dropdown test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Disabled element test",
+              "fullTitle": "checkbox test & dropdown test suite Disabled element test",
+              "timedOut": null,
+              "duration": 1815,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\test\\\\checkbox-dprdwn.cy.js\"\n}",
+              "code": "cy.visit(\"https://qa-practice.netlify.app/checkboxes\");\ncy.get(\"input[type='checkbox']\").should(\"not.be.checked\");\ncy.get(\"input[type='checkbox']\").check();\ncy.get(\"input[type='checkbox']\").should(\"be.checked\");\ncy.get(\"input[type='checkbox']\").uncheck();",
+              "err": {},
+              "uuid": "ea0f944a-9f61-497d-bb8e-02d4132e594e",
+              "parentUUID": "9b44a51f-fe45-4249-bade-33c86ffc8fa3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Dropdowns test",
+              "fullTitle": "checkbox test & dropdown test suite Dropdowns test",
+              "timedOut": null,
+              "duration": 5540,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\test\\\\checkbox-dprdwn.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\checkbox-dprdwn.cy.js\\\\checkbox test & dropdown test suite -- Dropdowns test (failed).png\"\n      ],\n      [\n        \"\\\\checkbox-dprdwn.cy.js\\\\checkbox test & dropdown test suite -- Dropdowns test (failed) (attempt 2).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit(\"https://qa-practice.netlify.app/dropdowns\");\ncy.get(\"select#dropdown-menu\").select(\"country\");\ncy.get(\"select#dropdown-menu option:selected\").should(\"have.text\", \"country\");",
+              "err": {
+                "message": "CypressError: Timed out retrying after 5000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `country`\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: Timed out retrying after 5000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `country`\n\nhttps://on.cypress.io/select\n    at getOptions (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:116310:72)\n    at tryCatcher (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:4285:29)\n    at retryOptions (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:116342:70)\n    at tryCatcher (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:151746:68)\n    at <unknown> (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:151687:14)\n    at tryCatcher (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://qa-practice.netlify.app/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress-demo/./cypress/e2e/test/checkbox-dprdwn.cy.js:16:39)",
+                "diff": null
+              },
+              "uuid": "cc5a91a8-c6d4-4cc0-af16-2c83f94b3ae6",
+              "parentUUID": "9b44a51f-fe45-4249-bade-33c86ffc8fa3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Dropdowns test: all countries by value",
+              "fullTitle": "checkbox test & dropdown test suite Dropdowns test: all countries by value",
+              "timedOut": null,
+              "duration": 36690,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\test\\\\checkbox-dprdwn.cy.js\"\n}",
+              "code": "cy.visit(\"https://qa-practice.netlify.app/dropdowns\");\ncy.get(\"#dropdown-menu option\").each($option => {\n  const value = $option.val();\n  const text = $option.text();\n  if (value) {\n    cy.get(\"#dropdown-menu\").select(value);\n    cy.get(\"#dropdown-menu option:selected\").should(\"have.text\", text);\n  }\n});",
+              "err": {},
+              "uuid": "e0fb02cf-ee5c-4568-b1ef-766bd52dfee2",
+              "parentUUID": "9b44a51f-fe45-4249-bade-33c86ffc8fa3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea0f944a-9f61-497d-bb8e-02d4132e594e",
+            "e0fb02cf-ee5c-4568-b1ef-766bd52dfee2"
+          ],
+          "failures": [
+            "cc5a91a8-c6d4-4cc0-af16-2c83f94b3ae6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 44045,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
