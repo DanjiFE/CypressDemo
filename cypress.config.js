@@ -8,6 +8,10 @@ module.exports = defineConfig({
   videoCompression: false,
   defaultCommandTimeout: 5000,
   pageLoadTimeout: 20000,
+  trashAssetsBeforeRuns: true,
+  env: {
+    grepOmitFiltered: true
+  },
   reporter: 'cypress-mochawesome-reporter',
   retries: {
     runMode: 1,

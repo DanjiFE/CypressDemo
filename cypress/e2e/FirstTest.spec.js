@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Me first test suite", () => {
+describe("Me first test suite", { tags: ['smoke', 'regression'] }, () => {
     it("first test", () => {
         cy.visit("https://velosklad.com.ua///")
         ccy.get('.search__input').type('bmx')

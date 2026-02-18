@@ -2,9 +2,18 @@
   "name": "cypress-demo",
   "version": "1.0",
   "description": "Training framework",
-  "scripts": {},
+  "scripts": {
+    "all_test": "npx cypress run",
+    "spec_select": "npx cypress run --spec cypress/e2e/table-list.spec.js --headed",
+    "browser_report": "npx cypress run --spec cypress/e2e/table-list.spec.js --reporter mochawesome --browser chrome",
+    "cloud_report": "npx cypress run --browser chrome cypress/e2e/table-list.spec.js --headed --record --key 57393598-b1f1-4783-964d-031d05f38a23",
+    "test_cases_set_one_tag": "npx cypress run --browser chrome --env grepTags=smoke",
+    "test_cases_set_two_tags": "npx cypress run --browser chrome --env grepTags=\"smoke regression\"",
+    "test_cases_set_both_tags": "npx cypress run --browser chrome --env grepTags=smoke+regression"
+  },
   "devDependencies": {
-    "cypress": "^15.9.0",
+    "@cypress/grep": "^6.0.0",
+    "cypress": "^15.10.0",
     "cypress-mochawesome-reporter": "^4.0.2"
   },
   "dependencies": {

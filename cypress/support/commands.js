@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+
+Cypress.Commands.add('initFixtures', () => {
+    cy.fixture('links').then((links) => {
+        globalThis.links = links;
+    })
+    cy.fixture('credentials').then((credentials) => {
+        globalThis.credentials = credentials;
+    })
+})
