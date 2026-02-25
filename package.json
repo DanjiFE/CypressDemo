@@ -13,7 +13,7 @@
     "test_cases_set_both_tags": "npx cypress run --browser chrome --env grepTags=smoke+regression"
   },
   "devDependencies": {
-    "cypress": "^15.9.0",
+    "cypress": "^15.10.0",
     "cypress-mochawesome-reporter": "^4.0.2"
   },
   "dependencies": {

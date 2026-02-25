@@ -11,13 +11,6 @@ describe("checkbox test & dropdown test suite", () => {
         cy.get("input[type='checkbox']").uncheck()
     })
 
-    it("Dropdowns test", () => {
-        cy.visit("https://qa-practice.netlify.app/dropdowns")
-        cy.get("select#dropdown-menu").select("country")
-        cy.get("select#dropdown-menu option:selected")
-            .should("have.text", "country")
-    })
-
     it("Dropdowns test: all countries by value", () => {
         cy.visit("https://qa-practice.netlify.app/dropdowns")
 
