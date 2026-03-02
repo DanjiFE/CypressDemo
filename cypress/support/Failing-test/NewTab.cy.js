@@ -1,4 +1,4 @@
-import TabPage from "../../../support/Pages/TabPage"
+import TabPage from "../../support/Pages/TabPage"
 
 describe("New Tab test suite", () => {
 

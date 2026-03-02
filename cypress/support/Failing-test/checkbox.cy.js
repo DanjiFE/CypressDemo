@@ -1,4 +1,4 @@
-import checkboxPage from "../../../support/Pages/CheckboxPage"
+import checkboxPage from "../support/Pages/CheckboxPage"
 
 describe("Checkbox test suite", () => {
 
